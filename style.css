@@ -1,0 +1,76 @@
+/* Box sizing reset */
+* {
+  box-sizing: border-box;
+}
+
+/* Set body margin to 0 */
+body {
+  margin: 0;
+}
+
+/* Style header */
+header {
+  background-color: #333;
+  color: white;
+  padding: 20px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+/* Style container */
+.container {
+  margin-top: 100px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* Style rows */
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+/* Style columns */
+.column {
+  flex: 1;
+  padding: 10px;
+  text-align: center;
+}
+
+/* Style even rows */
+.row:nth-child(even) .column:first-child {
+  order: 2;
+}
+
+.row:nth-child(even) .column:last-child {
+  order: 1;
+}
+
+/* Style images */
+img {
+  width: 100%;
+  height: auto;
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
+}
+
+/* Style footer */
+footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+
+
+img:hover {
+  opacity: 0.8;
+  transform: scale(1.1);
+  z-index: -1;
+}
